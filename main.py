@@ -7,6 +7,9 @@ import pickle
 # flask app
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return render_template('index.html')  # or return "Welcome to the app"
 
 
 # load databasedataset===================================
